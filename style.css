@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.h::-webkit-scrollbar {
+    width: 11px;
+    background-color: beige;
+  }
+
+.h::-webkit-scrollbar-thumb {
+   background-color: lightblue ;
+   border-radius: 6px;
+}
+
+.h{
+    min-height: 30rem ;
+    max-height: 30rem ;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    scrollbar-color: orange red; 
+}
+
+.chatbot{
+    background-color: rgb(228, 228, 228);
+    width: 27rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    opacity: 0;
+    transform: scale(0);
+    transform-origin: bottom right; 
+    border-radius: 0.5rem; 
+    position: relative;
+    transition: all 1s ease;
+    
+}
+
+.show{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.textarea{
+    display: flex;
+    justify-content: space-between;
+    background-color: lightcoral;
+    height: 3rem;
+    max-height: 12rem;
+    position: absolute;
+    bottom: -48;
+    width: 27rem;
+}
+
+.header{
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: lightcoral;
+    border-radius: 0.5rem;
+    color: white;
+}
+
+.output, .input{
+    display: flex;
+    margin-bottom: 1rem;
+    
+}
+
+.output span{
+    align-self: flex-end;
+    padding: 0.5rem;
+    margin-right: 0.5rem; 
+    margin-left: 0.5rem;
+    background-color: lightgreen;
+}
+
+.output p, .input p {
+    background-color: lightgoldenrodyellow;
+    padding: 0.5rem;
+    line-height: 1.3rem;
+    border-radius: 0.5rem;
+    width: 12rem;
+    word-wrap: break-word;
+    
+}
+
+.input{
+    justify-content: flex-end;
+    margin-top: 0.5rem; 
+    margin-right: 0.4rem;
+}
+
+.input p {
+    background-color: white;     
+}
+
+textarea{
+    border: transparent;
+    flex: 1;
+    padding: 0.5rem;
+    outline: none;
+    background-color: lightgreen;
+    text-overflow: inherit;
+    resize: none;    
+}
+
+.textarea span{
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    padding: 0.5rem; 
+}
+
+.icons{
+    position: absolute;
+    bottom: 3%;
+    right: 10%;
+    /* width: 100%; */
+}
+
+.icons span{
+    position: absolute;
+    cursor: pointer;
+    transition: ease all 1s;
+    color: rebeccapurple;
+    font-size: 2rem;
+}
+
+.eject{
+    opacity: 0;
+
+}
+
+.remove{
+    opacity: 0; 
+    transform: rotate(90deg);
+}
+
+.install{
+    opacity: 1;
+    transform: rotate(90deg);
+
+}
+
+
+
+
+
+
+
+
+
+
